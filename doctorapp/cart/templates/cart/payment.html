@@ -1,0 +1,76 @@
+{% include 'home/navbar.html' %}
+{% load static %}
+<!-- <!DOCTYPE html> -->
+<!-- <html>
+<head>
+  <title>Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  
+</head> -->
+<link rel="stylesheet" href="{% static 'cart/payment.css' %}">
+<body>
+  <main class="page payment-page">
+    <section class="payment-form dark">
+      <div class="container">
+        <div class="block-heading">
+          <h2>Checkout</h2>
+        </div>
+        <form>
+          <div class="products">
+            <div class="item">
+              <span class="price">$5</span>
+              <p class="item-name">Product 1</p>
+              <p class="item-description">Item Description</p>
+            </div>
+            <div class="item">
+              <span class="price">$6</span>
+              <p class="item-name">Product 2</p>
+              <p class="item-description">Item Description</p>
+            </div>
+            <div class="total">Total<span class="price">$11</span></div>
+          </div>
+          <div class="card-details">
+            <h3 class="title">Address</h3>
+            <div class="row">
+              <div class="form-group col-sm-12">
+                <label for="full-name">Full Name</label>
+                <input id="card-holder" type="text" class="form-control" placeholder="Full Name" aria-label="Full Name" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="">Mobile Number</label>
+                <input id="mobile-number" type="text" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="address">Address</label>
+                <input id="address" type="text" class="form-control" placeholder="Address" aria-label="Address" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="pin">Pincode</label>
+                <input id="pin" type="text" class="form-control" placeholder="Pincode" aria-label="Pincode" aria-describedby="basic-addon1">
+              </div>
+              <div class="form-group col-sm-12">
+                <a href="{% url 'payment:process' %}" type="button" class="btn btn-primary btn-block">Proceed</a>
+                <!-- <button onclick="setTimeout(myFunction, 3000);">Proceed</button> -->
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  function myFunction() {
+    //  $.get("{% url 'payment:process' %}"); // Do something after 5 seconds
+    alert("Hello");
+}
+</script>
+</body>
+
+
+<!-- </html> -->
